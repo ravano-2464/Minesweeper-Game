@@ -27,5 +27,6 @@ Minesweeper adalah permainan komputer klasik yang menguji keterampilan pemain da
 2. Buka proyek di IDE pilihan Anda.
 3. Jalankan program utama:
 
+```bash
 javac Minesweeper.java
 java Minesweeper
