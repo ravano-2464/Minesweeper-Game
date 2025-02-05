@@ -33,7 +33,7 @@ public class Minesweeper {
     ArrayList<MineTile> mineList;
     Random random = new Random();
 
-    int tilesClicked = 0; //goal is to click all tiles except the ones containing mines
+    int tilesClicked = 0; 
     boolean gameOver = false;
 
     Minesweeper() {
@@ -83,7 +83,6 @@ public class Minesweeper {
                         }
                         MineTile tile = (MineTile) e.getSource();
 
-                        //left click
                         if (e.getButton() == MouseEvent.BUTTON1) {
                             if (tile.getText().equals("")) {
                                 if (mineList.contains(tile)) {
@@ -93,7 +92,7 @@ public class Minesweeper {
                                 }
                             }
                         }
-                        //right click
+
                         else if (e.getButton() == MouseEvent.BUTTON3) {
                             if (tile.getText().equals("") && tile.isEnabled()) {
                                 tile.setText("🚩");
@@ -158,38 +157,32 @@ public class Minesweeper {
 
         int minesFound = 0;
 
-        //top 3
-        minesFound += countMine(r-1, c-1);  //top left
-        minesFound += countMine(r-1, c);    //top
-        minesFound += countMine(r-1, c+1);  //top right
+        minesFound += countMine(r-1, c-1);  
+        minesFound += countMine(r-1, c);    
+        minesFound += countMine(r-1, c+1);  
 
-        //left and right
-        minesFound += countMine(r, c-1);    //left
-        minesFound += countMine(r, c+1);    //right
+        minesFound += countMine(r, c-1);    
+        minesFound += countMine(r, c+1);    
 
-        //bottom 3
-        minesFound += countMine(r+1, c-1);  //bottom left
-        minesFound += countMine(r+1, c);    //bottom
-        minesFound += countMine(r+1, c+1);  //bottom right
+        minesFound += countMine(r+1, c-1);  
+        minesFound += countMine(r+1, c);    
+        minesFound += countMine(r+1, c+1);  
 
         if (minesFound > 0) {
             tile.setText(Integer.toString(minesFound));
         } else {
             tile.setText("");
             
-            //top 3
-            checkMine(r-1, c-1);    //top left
-            checkMine(r-1, c);      //top
-            checkMine(r-1, c+1);    //top right
+            checkMine(r-1, c-1);  
+            checkMine(r-1, c);      
+            checkMine(r-1, c+1);    
 
-            //left and right
-            checkMine(r, c-1);      //left
-            checkMine(r, c+1);      //right
+            checkMine(r, c-1);      
+            checkMine(r, c+1);     
 
-            //bottom 3
-            checkMine(r+1, c-1);    //bottom left
-            checkMine(r+1, c);      //bottom
-            checkMine(r+1, c+1);    //bottom right
+            checkMine(r+1, c-1);    
+            checkMine(r+1, c);      
+            checkMine(r+1, c+1);   
         }
 
         if (tilesClicked == numRows * numCols - mineList.size()) {
