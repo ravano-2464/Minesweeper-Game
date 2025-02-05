@@ -14,7 +14,7 @@ Minesweeper adalah permainan komputer klasik yang menguji keterampilan pemain da
 
 ## Foto Aplikasi
 
-!Foto Game Minesweeper Java
+![minesweeper-java-demo](https://github.com/ravano-2464/Minesweeper-Game/blob/main/Foto%20Game%20Minesweeper%20Java.jpg)
 
 ## Fitur
 
