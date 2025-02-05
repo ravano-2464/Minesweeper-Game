@@ -22,7 +22,7 @@ Minesweeper adalah permainan komputer klasik yang menguji keterampilan pemain da
 
 1. Clone repositori ini:
    ```bash
-   git clone https://github.com/username/minesweeper.git
+   git clone https://github.com/ravano-2464/Minesweeper-Game.git
 
 2. Buka proyek di IDE pilihan Anda.
 3. Jalankan program utama:
