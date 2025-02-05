@@ -18,6 +18,10 @@ Minesweeper adalah permainan komputer klasik yang menguji keterampilan pemain da
 - **Tombol Restart**: Pemain dapat memulai ulang permainan kapan saja dengan mengklik tombol restart.
 - **Tingkat Kesulitan**: Permainan memiliki berbagai tingkat kesulitan, mulai dari pemula hingga ahli.
 
+## Kontribusi
+
+Kontribusi sangat diterima! Silakan fork repositori ini dan buat pull request dengan perubahan yang Anda usulkan.
+
 ## Instalasi
 
 1. Clone repositori ini:
