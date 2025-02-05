@@ -12,6 +12,10 @@ Minesweeper adalah permainan komputer klasik yang menguji keterampilan pemain da
 4. **Analisis Angka**: Gunakan angka-angka yang terungkap untuk menentukan lokasi ranjau. Misalnya, jika sebuah kotak berisi angka "1", itu berarti ada satu ranjau di salah satu kotak tetangganya.
 5. **Menang**: Pemain menang jika berhasil mengungkap semua kotak tanpa mengenai ranjau.
 
+## Foto Aplikasi
+
+!Foto Game Minesweeper Java.jpg
+
 ## Fitur
 
 - **Input Jumlah Ranjau**: Pemain dapat memasukkan jumlah ranjau yang diinginkan sebelum memulai permainan.
