@@ -205,7 +205,7 @@ public class Minesweeper {
         try {
             mineCount = Integer.parseInt(mineInput.getText());
         } catch (NumberFormatException e) {
-            mineCount = 10; // default value
+            mineCount = 10; 
         }
         tilesClicked = 0;
         gameOver = false;
