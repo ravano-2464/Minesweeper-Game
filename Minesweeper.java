@@ -64,7 +64,7 @@ public class Minesweeper {
 
         frame.add(textPanel, BorderLayout.NORTH);
 
-        boardPanel.setLayout(new GridLayout(numRows, numCols)); //8x8
+        boardPanel.setLayout(new GridLayout(numRows, numCols)); 
         frame.add(boardPanel, BorderLayout.CENTER);
 
         for (int r = 0; r < numRows; r++) {
@@ -123,7 +123,7 @@ public class Minesweeper {
         mineList = new ArrayList<MineTile>();
         int mineLeft = mineCount;
         while (mineLeft > 0) {
-            int r = random.nextInt(numRows); //0-7
+            int r = random.nextInt(numRows); 
             int c = random.nextInt(numCols);
 
             MineTile tile = board[r][c]; 
